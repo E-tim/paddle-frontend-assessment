@@ -1,0 +1,68 @@
+
+/* git component */
+
+.git {
+    overflow-y: scroll;
+    height: 100vh;
+}
+.gitResult {
+    display: flex;
+    background-color: white;
+    color: black;
+    margin: 20px 20%;
+    padding: 10px;
+}
+.gitResult img {
+    width: 70px;
+    height: 70px;
+    margin-left: 15%;
+}
+
+.subGitresult {
+    width: 450px;
+    margin: 0 0 0 28px;
+}
+.subGitresult p {
+    font-size: 12px;
+}
+.starsIssues {
+    display: flex;
+    justify-content: space-between;
+    width: 270px;
+}
+.myP {
+    border: 1px solid black;
+} 
+
+@media only screen and (max-width: 768px) {
+    .gitResult {
+        margin: 20px;
+        padding: 10px;
+    }
+    .gitResult img {
+        width: 70px;
+        height: 70px;
+        margin-left: 7px;
+    }
+    .starsIssues {
+        display: flex;
+        justify-content: space-between;
+        width: 250px;
+    }
+
+}
+
+/* Pagination component */
+
+.paginate {
+    display: flex;
+    justify-content: center;
+}
+.paginate a {
+    text-decoration: none;
+    color: black;
+    background-color: white;
+    margin: 0 10px;
+    padding: 2px 5px;
+    font-weight: 700;
+}

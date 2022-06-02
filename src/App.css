@@ -1,0 +1,306 @@
+
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  background-color: #1a0033;
+  color: white;
+  overflow-y: hidden;
+  overflow-x: hidden;
+}
+
+/* landinng page componenet */
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  padding: 30px 10%;
+
+}
+h1 {
+  font-size: 25px;
+  cursor: pointer;
+}
+.subNav {
+  display: flex;
+}
+
+ul {
+  list-style: none;
+  display: inline-flex;
+  padding: 10px 5px;
+  margin: 0 30px 0 0;
+}
+li {
+  margin: 0 20px;
+  font-size: 13px;
+  cursor: pointer;
+}
+li:hover {
+  color: blue;
+}
+.contact {
+  background-color: blue;
+  border-radius: 15px;
+  padding: 10px 25px;
+  font-size: 11px;
+  text-align: center;
+  cursor: pointer;
+}
+.faBars {
+  font-size: 20px;
+  margin-top: 8px;
+  margin-left: 10px;
+  display: none;
+}
+@media only screen and (max-width: 768px) {
+  .subNav {
+    display: block;
+    position: absolute;
+    background-color: white;
+    padding: 40px;
+    
+    top: 10%;
+    right: 12%;
+    transition: 1s  ;
+    /* transform: translate(-50%, -50%); */
+  }
+  .hideSubNav {
+    right: -70%;
+    /* transition: 1s; */
+  }
+  ul {
+    display: block;
+    margin: 0 0 0 0;
+  }
+  li {
+    text-align: center;
+    margin: 15px 0;
+    font-size: 17px;
+    color: black;
+    
+  }
+  .faBars {
+    display: block;
+  }
+  .contact {
+    font-size: 14px;
+  }
+}
+
+/*  Section component  */
+section {
+  margin: 3% 0;
+  z-index: 3;
+}
+section h2 {
+  font-size: 35px;
+  text-align: center;
+}
+section p {
+  text-align: center;
+  color: #cccccc;
+  margin: 20px 0;
+}
+section p span {
+  color: white;
+}
+.count-down {
+  display: flex;
+  justify-content: center;
+}
+.subCount-down {
+  background-color: white;
+  display: grid;
+  place-items: center;
+  width: 60px;
+  height: 70px;
+  margin: 0 4px;
+  border-radius: 5px;
+}
+.subCount-down h3 {
+  color: black;
+  text-align: center;
+}
+.subCount-down span {
+  font-weight: 400;
+  font-size: 14px;
+}
+
+form {
+  display:  flex;
+  justify-content: center;
+  margin: 20px 0 30px 0;
+}
+form input {
+  background-color: #1a0033;
+  border: 1px solid #1a0033;
+  border-bottom: 1px solid gray;
+  margin: 0 10px;
+  padding: 10px;
+  width: 120px;
+}
+form input:focus {
+  outline: none;
+}
+
+.myForm {
+  display: flex;
+  justify-content: center;
+  position: relative;
+}
+.myForm input {
+  width: 10%;
+  height: 35px;
+  border-radius: 15px;
+  border: 1px solid white;
+  margin-right: 100px;
+  padding: 0 35px;
+}
+.myForm button{
+  font-size: 10px;
+  background-color: blue;
+  padding: 10px;
+  border: 1px solid blue;
+  height: 37px;
+  color: white;
+  border-radius: 15px;
+  position: absolute;
+  right: 25%;
+ 
+}
+
+.bottom {
+  display: flex;
+  justify-content: center;
+}
+.bottoms {
+  width: 1050px;
+  height: 400px;
+  background-color: #ffffff;
+  border: 1px solid #ffffff;
+  opacity: 0.1;
+  border-radius: 47% 53% 100% 0% / 100% 100% 0% 0% ;
+  position: absolute;
+  bottom: -340px;
+ 
+}
+
+/* @media only screen and (min-width: 1000px) {
+  .myForm input {
+    width: 20%;
+  }
+} */
+@media only screen and (min-width: 768px) {
+  .myForm input {
+    width: 25%;
+    margin-right: 70px;
+  }
+  .myForm button{
+    right: 30%;
+   
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .bottoms {
+    width: 800px;
+    height: 250px;
+    border-radius: 48% 52% 100% 0% / 100% 100% 0% 0%  ;
+    bottom: -200px;
+  }
+  .myForm input {
+    width: 35%;
+    margin-right: 100px;
+  }
+}
+@media only screen and (max-width: 650px) {
+  .myForm button{
+    right: 17%;
+   
+  }
+}
+
+@media only screen and (max-width: 568px) {
+  .bottoms {
+    width: 600px;
+    height: 200px;
+    border-radius: 48% 52% 100% 0% / 100% 100% 0% 0% ;
+    bottom: -150px;
+  }
+}
+@media only screen and (min-width: 968px){
+  
+}
+@media only screen and (min-width: 1200px) {
+  
+}
+
+/* Circles Component */
+
+.topLeftCircle {
+  width: 90px;
+  height: 90px;
+  background-color: red;
+  border-radius: 50%;
+  position: absolute;
+  opacity: 0.1;
+  top: 13%;
+  left: 20%;
+}
+.rightCircle {
+  width: 60px;
+  height: 60px;
+  background-color: green;
+  position: absolute;
+  top: 38%;
+  right: 28%;
+  opacity: 0.4;
+  border-radius: 50%;
+}
+.bottomCircle {
+  width: 100px;
+  height: 100px;
+  background-color: red;
+  position: absolute;
+  bottom: -10px;
+  left: 27%;
+  opacity: 0.4;
+  border-radius: 50%;
+}
+
+@media only screen and (max-width: 768px) {
+  .topLeftCircle {
+    width: 60px;
+    height: 60px;
+    left: 12%;
+  }
+  .rightCircle {
+    width: 50px;
+    height: 50px;
+    top: 35%;
+    right: 12%;
+  }
+  .bottomCircle {
+    width: 80px;
+    height: 80px;
+    left: 17%;
+  }
+
+}
+
+
+
+
+
+
+
+
+.myH1 {
+  margin: 30px;
+}
+.myPar {
+  text-align: center;
+  margin: 15% 0;
+}
