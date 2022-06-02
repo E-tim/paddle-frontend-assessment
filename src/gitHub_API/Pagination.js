@@ -11,7 +11,7 @@ const Pagination = ({dataPerpage, totalData, changePage}) => {
     <div className='paginate' >
         {
             pageNumber.map(number => {
-                return <a key={number} onClick={()=> {changePage(number)}} href='#'>{number}</a>
+                return <p key={number} onClick={()=> {changePage(number)}} >{number}</p>
             })
         }
         

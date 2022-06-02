@@ -4,9 +4,7 @@ import  './Git.css'
 const DataRecieved = ({apiData, loading}) => {
   // 
   if (loading) {
-    return (<div style={{display: 'flex', justifyContent: 'center', alignItems: 'center', margin: '13%'}} >
-      <img src='img/loading.gif' alt='loading'/>
-    </div>) 
+    return  <img className='myImage' src='img/loadin.gif' alt='loading'/>
   }
 
   return (

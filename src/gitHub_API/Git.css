@@ -5,6 +5,14 @@
     overflow-y: scroll;
     height: 100vh;
 }
+.myImage {
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
 .gitResult {
     display: flex;
     background-color: white;
@@ -58,11 +66,11 @@
     display: flex;
     justify-content: center;
 }
-.paginate a {
-    text-decoration: none;
+.paginate p {
     color: black;
     background-color: white;
     margin: 0 10px;
     padding: 2px 5px;
     font-weight: 700;
+    cursor: pointer;
 }
