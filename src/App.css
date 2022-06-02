@@ -49,25 +49,30 @@ li:hover {
   cursor: pointer;
 }
 .faBars {
-  font-size: 20px;
-  margin-top: 8px;
+  font-size: 25px;
+  margin-top: 5px;
   margin-left: 10px;
   display: none;
 }
 @media only screen and (max-width: 768px) {
+  nav {
+    padding: 12px 10%;
+  
+  }
   .subNav {
     display: block;
     position: absolute;
     background-color: white;
-    padding: 40px;
-    
-    top: 10%;
-    right: 12%;
+    /* padding: 40px; */
+    width: 100vw;
+    height: 100vh;
+    top: 56.7%;
+    left: 50%;
     transition: 1s  ;
-    /* transform: translate(-50%, -50%); */
+    transform: translate(-50%, -50%);
   }
   .hideSubNav {
-    right: -70%;
+    top: -70%;
     /* transition: 1s; */
   }
   ul {
@@ -76,16 +81,21 @@ li:hover {
   }
   li {
     text-align: center;
-    margin: 15px 0;
-    font-size: 17px;
+    margin: 35px 0;
+    font-size: 19px;
     color: black;
     
   }
   .faBars {
     display: block;
+   
   }
   .contact {
     font-size: 14px;
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
   }
 }
 
@@ -149,6 +159,7 @@ form input:focus {
   display: flex;
   justify-content: center;
   position: relative;
+  z-index: -1;
 }
 .myForm input {
   width: 10%;
